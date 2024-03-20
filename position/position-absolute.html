@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absolute</title>
+  <style>
+    .container{
+      position: relative;
+    }
+
+    /* th: 3th: 3번째 -> nth: n번째 */
+    .container div{
+      /* absolute 는 브라우저 기준
+      선언 순서대로 뒤로 겹친다.
+      z-index 사용 불가 */
+      position: absolute;
+      font-size: 2rem;
+      width: 400px;
+      height: 50px;
+    }
+    /* relative-absolute: 배경색, 커피색은  */
+    .container div:nth-child(1){
+      background: brown;
+      color: white;
+    }
+    .container div:nth-child(2){
+      background: chocolate;
+      color: ivory;
+    }
+    .container div:nth-child(3){
+      background: lightgreen;
+      color: navy;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>코코아</div>
+  </div>
+  <div class="container">
+    <div>커피</div>
+  </div>
+  <div class="container">
+    <div>에이드</div>
+  </div>
+  
+</body>
+</html>

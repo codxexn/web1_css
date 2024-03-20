@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex</title>
+  <style>
+    #wrap{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .column{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 50px;
+      background: ivory;
+      border: 2px solid saddlebrown;
+    }
+  </style>
+</head>
+<body>
+  <!-- flex로 3행 4열 만들기(div 만 사용) div>div-->
+  <div id="wrap">
+    <div class="column">1행 1열</div>
+    <div class="column">1행 2열</div>
+    <div class="column">1행 3열</div>
+    <div class="column">1행 4열</div>
+  </div>
+  <div id="wrap">
+    <div class="column">2행 1열</div>
+    <div class="column">2행 2열</div>
+    <div class="column">2행 3열</div>
+    <div class="column">2행 4열</div>
+  </div>
+  <div id="wrap">
+    <div class="column">3행 1열</div>
+    <div class="column">3행 2열</div>
+    <div class="column">3행 3열</div>
+    <div class="column">3행 4열</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+  /* width 는 상대적이지 않고 절대적이라 크기를 유지한다.
+  max-width를 사용하면 아무리 브라우저가 작아져도 
+  저 크기만큼은 유지해서 더 줄어들지 않고 스크롤 바가 생긴다. */
+  width: 440px;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+header,
+nav,
+main,
+article,
+aside,
+footer {
+  width: 400px;
+  margin: 4px;
+  padding: 4px;
+  background-color: #ddd;
+  text-align: center;
+}
+
+aside {
+  float: left;
+  width: 84px;
+  height: 100px;
+}
+
+main {
+  float: left;
+  width: 300px;
+  height: 100px;
+}
+
+article {
+  width: 292px;
+  background-color: #efefef;
+}
+
+footer {
+  clear: left;
+}

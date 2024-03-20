@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position 실습</title>
+  <style>
+    div.img{
+      position: relative;
+      width: 220px;
+      height: 315px;
+      background-image: url("http://koreaitacademy.com/renewal2021/img/tch/teacher007.png");
+      background-repeat: no-repeat;
+      margin: 100px auto 0;
+    }
+
+    #pic1 img{
+      position: absolute;
+      width: 350px;
+      top: -6px;
+      left: -77px;
+      z-index: 1;
+    }
+
+    #pic2 img{
+      position: absolute;
+      width: 400px;
+      top: 285px;
+      left: -87px;
+      z-index: 2;
+    }
+
+    #pic3 img{
+      position: absolute;
+      width: 100px;
+      top: 130px;
+      left: 40px;
+      z-index: 3;
+    }
+      
+    
+  </style>
+</head>
+<body>
+  <div class="img">
+    <div id="pic1">
+      <img src="images/baby.png">
+    </div>
+    <div id="pic2">
+        <img src="images/BOSS.png">
+    </div>
+    <div id="pic3">
+      <img src="images/jb.png">
+  </div>
+  </div>
+</body>
+</html>

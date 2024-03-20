@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습</title>
+  <style>
+    #wrap{
+      /* 부모요소에 px을 주면 고정값이 된다. */
+      width: 350px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    div.container{
+      /* flex 하면 text-align 안 먹는다! 따라서 justify-content 해줘야 함 */
+      /* 아래 세줄이 수직수평 센터로 맞추는 것 */
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      /* text-align: center; */
+      background: pink;
+      border: 3px dotted greenyellow;
+      border-radius: 10%;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="container">DIV1</div>
+    <div class="container">DIV2</div>
+    <div class="container">DIV3</div>
+  </div>
+</body>
+</html>
