@@ -1,0 +1,96 @@
+html {
+  font-family: "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+  font-size: 14px;
+  color: #333;
+  user-select: none;
+  background-color: #fff;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+.above-header {
+  position: relative;
+  width: 1050px;
+  height: 100px;
+  margin: 0 auto;
+  letter-spacing: -0.3px;
+}
+
+.join-login-cs {
+  font-size: 11.5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+}
+
+.join-login-cs a.join {
+  display: block;
+  color: rgb(95, 0, 128);
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.join-login-cs a.login {
+  display: block;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.join-login-cs div.partition {
+  width: 1px;
+  height: 13px;
+  margin: 0 12px;
+  background-color: #d9d9d9;
+}
+
+.join-login-cs a.cs {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  line-height: 35px;
+}
+
+a.cs span.category-arrow {
+  width: 8px;
+  height: 5px;
+  background-image: url(https://res.kurly.com/pc/ico/1908/ico_down_16x10.png);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 1px;
+}
+
+a.cs div.category {
+  position: absolute;
+  right: 0;
+  top: 34px;
+  width: 130px;
+  padding: 3px 9px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.category div.detail {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  cursor: pointer;
+  margin: -2px 0 0 4px;
+  vertical-align: middle;
+}
